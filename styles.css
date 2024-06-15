@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #ff69b4; /* Warna pink */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #ff69b4; /* Warna pink */
+}
+
+.hero {
+    background-color: #fdf5e6; /* Warna putih tulang */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff69b4; /* Warna pink */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.products {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    color: #333;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fdf5e6; /* Warna putih tulang */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: calc(33% - 40px);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    color: #333;
+}
+
+.product-item p {
+    color: #666;
+}
+
+.price {
+    color: #ff69b4; /* Warna pink */
+    font-weight: bold;
+}
+
+.about {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    text-align: center;
+    color: #333;
+}
+
+.about p {
+    text-align: center;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .contact-info, footer .social-media, footer .newsletter {
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #ff69b4; /* Warna pink */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Warna pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
