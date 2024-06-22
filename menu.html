@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAPUR Ara</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-cream">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logoecommers.jpg" alt="Logo"> DAPUR Ara
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/vogue.cafee?igshid=MW5nMGl3Z2gzenJjdw==">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fas fa-shopping-cart cart-indicator">
+                            <span id="cart-indicator" class="cart-empty"></span>
+                        </i>
+                        <span id="cart-total">0.00</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-arrow-left"></i> Back</a></li>
+        <h1 class="text-center">Menu</h1>
+
+        <!-- Product Grid -->
+        <div class="row mt-5">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Rendang</h5>
+                        <p class="card-text">Masakan nusantara dari Sumatera Barat ini pernah dinobatkan sebagai makanan terlezat di dunia. Makanan dari daging sapi yang dimasak menggunakan santan kelapa serta bumbu rempah selama berjam-jam ini memang begitu terkenal. Rasanya yang gurih dan juga nikmat, sukses membuat makanan khas daerah Sumatera Barat ini begitu disukai banyak orang.</p>
+                        <p class="card-text">Rp.50.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Rendang" data-price="50.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/3.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Gulai Belacan</h5>
+                        <p class="card-text">Gulai Belacan adalah masakan nusantara dari Riau. Belacan sendiri adalah nama lain dari terasi yang begitu dikenal oleh orang Sumatera. Makanan khas Riau ini dibuat dari bahan dasar kuah yang dicampur terasi. Di dalamnya ada isian berupa daging, udang atau ikan.</p>
+                        <p class="card-text">Rp.25.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Gulai Belacan" data-price="25.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/mieaceh.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Mie Aceh</h5>
+                        <p class="card-text">Masakan nusantara khas Aceh ini punya tekstur yang tebal dan dicampur dengan irisan daging serta bumbu rempah yang kuat. Mie Aceh biasa disajikan dengan digoreng, direbus atau ditumis. Tentunya, bisa juga disajikan dengan tambahan seafood seperti kepiting, udang dan cumi.</p>
+                        <p class="card-text">Rp.30.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Mie Aceh" data-price="30.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/pempek.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pempek</h5>
+                        <p class="card-text">Makanan khas Sumatera Selatan ini sudah dikenal dengan kelezatannya. Masakan nusantara ini dibuat dari olahan ikan yang dicampur dengan sagu. Dilengkapi kuah cuko atau cuka yang begitu menggoda selera membuat banyak orang menggemarinya.</p>
+                        <p class="card-text">Rp.25.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Pempek" data-price="25.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/guded.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Gudeg</h5>
+                        <p class="card-text">Masakan nusantara dari Jogja wajib dicicipi. Gudeg adalah sayur nangka muda yang dimasak dengan santan tapi melalui proses yang lama. Gudeg biasa disajikan dengan nasi panas, kuah santan kental (areh), ayam kampung, telur dan serta sambal krecek.</p>
+                        <p class="card-text">Rp.30.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Gudeg" data-price="30.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/p.jpg" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Rujak Cingur</h5>
+                        <p class="card-text">Masakan nusantara dari Jawa Timur, yaitu rujak cingur yang sangat terkenal. Rujak dibuat dari campuran cingur (mulut sapi), sayur dan buah-buahan yang disirami dengan bumbu petis.</p>
+                        <p class="card-text">Rp.20.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Rujak cingur" data-price="20.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/2.jpg" class="card-img-top" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Soto Lamongan</h5>
+                        <p class="card-text">Masakan nusantara ini secara tampilan hampir sama dengan soto pada umumnya. Tapi, ada satu bahan yang sangat khas di soto ini, yaitu koya. Koya adalah jenis bubuk gurih yang dibuat dari bawang putih dan kerupuk udang.</p>
+                        <p class="card-text">Rp.20.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Soto Lamongan" data-price="20.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/4.jpg" class="card-img-top" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Lontong Kupang</h5>
+                        <p class="card-text">Lontong Kupang mudah ditemukan di Surabaya, Pasuruan dan Sidoarjo. Makanan ini terbuat dari kupang putih, yang merupakan sejenis hewan laut seperti kerang. Kupang putih tersebut dimasak dengan berbagai bumbu-bumbu yang sangat menggugah selera.</p>
+                        <p class="card-text">Rp.20.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Lontong Kupang" data-price="20.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/ayambetutu.jpg" class="card-img-top" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Ayam Betutu</h5>
+                        <p class="card-text">Ayam Betutu adalah masakan nusantara dari Bali. Betutu sendiri adalah lauk yang terbuat dari ayam atau bebek utuh berisi bumbu, lalu dipanggang dengan api sekam.</p>
+                        <p class="card-text">Rp.85.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Ayam Betutu" data-price="85.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/keraktelur.jpg" class="card-img-top" alt="Product 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerak Telur</h5>
+                        <p class="card-text">Kerak telor adalah salah satu makanan nusantara dari Jakarta yang selalu menggoda selera.</p>
+                        <p class="card-text">Rp.18.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Kerak Telur" data-price="18.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/sate.jpg" class="card-img-top" alt="Product 11">
+                    <div class="card-body">
+                        <h5 class="card-title">Sate Bandeng</h5>
+                        <p class="card-text">Sate Bandeng adalah masakan nusantara dari Banten yang dibuat dari ikan bandeng. Uniknya dari sate bandeng ini yaitu tidak memiliki duri serta tekstur dagingnya empuk.</p>
+                        <p class="card-text">Rp.45.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Waffle" data-price="5.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/nasi uduk.jpg" class="card-img-top" alt="Product 12">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Uduk</h5>
+                        <p class="card-text">Nasi uduk adalah masakan nusantara dari jakarta, nasi uduk yang lezat dan harum. Dengan memasak nasi menggunakan santan, serai, dan rempah-rempah, nasi uduk akan memberikan cita rasa istimewa yang tak terlupakan. Sajikan nasi uduk bersama lauk-pauk seperti ayam goreng dan tempe orek.</p>
+                        <p class="card-text">Rp.20.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Nasi Uduk" data-price="20.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/gado gado.jpg" class="card-img-top" alt="Product 13">
+                    <div class="card-body">
+                        <h5 class="card-title">Gado-Gado</h5>
+                        <p class="card-text">Dengan menggunakan sayuran segar, tahu, tempe, dan telur, serta bumbu kacang yang kental dan gurih, gado-gado akan menjadi hidangan yang dicintai oleh pecinta makanan sehat. </p>
+                        <p class="card-text">Rp.15000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="gado-gado" data-price="15.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/mie kikil.jpg" class="card-img-top" alt="Product 14">
+                    <div class="card-body">
+                        <h5 class="card-title">Mie Kikil</h5>
+                        <p class="card-text">Dengan kikil sapi yang lembut dan kenyal sebagai bintangnya, Mie Kikil disajikan dalam kuah kaldu yang gurih dan aromatik, diperkaya dengan rempah-rempah pilihan yang membangkitkan selera. </p>
+                        <p class="card-text">Rp.25.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="Mie kikil" data-price="25.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/nasi tumpeng.jpeg" class="card-img-top" alt="Product 15">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Tumpeng</h5>
+                        <p class="card-text">Nasi kunyit berbentuk kerucut yang dihiasi dengan beragam lauk seperti ayam, telur, dan sayuran, simbol kebersamaan dan syukur dalam tradisi Jawa, sering kali menjadi pusat perhatian dalam setiap perayaan.</p>
+                        <p class="card-text">Rp.100.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="nasi tumpeng" data-price="100.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/nasi padang.jpg" class="card-img-top" alt="Product 16">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Padang</h5>
+                        <p class="card-text">Variasi lauk pauk seperti rendang, ayam pop, dan sambal hijau yang pedas, hidangan Padang yang terkenal di seluruh Indonesia, menyediakan kelezatan yang memuaskan bagi pecinta kuliner pedas.</p>
+                        <p class="card-text">Rp.50.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="nasi padang" data-price="50.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 17 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/sambel terasi.jpg" class="card-img-top" alt="Product 17">
+                    <div class="card-body">
+                        <h5 class="card-title">Sambel Terasi</h5>
+                        <p class="card-text">Jangan lupakan sambal terasi yang kaya akan aroma dan rasa. Sambal ini adalah pelengkap tak terpisahkan dalam hidangan nusantara. Terbuat cabai, terasi, dan bumbu-bumbu lainnya, sambal terasi akan memberikan sentuhan istimewa pada hidangan Anda. </p>
+                        <p class="card-text">Rp.20.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="sambel terasi" data-price="20.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 18 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/serabi solo.jpg" class="card-img-top" alt="Product 18">
+                    <div class="card-body">
+                        <h5 class="card-title">Serabi Solo</h5>
+                        <p class="card-text">Pancake manis dengan tekstur lembut khas Solo, bisa dinikmati dengan gula merah cair atau hanya dengan taburan gula halus, sempurna untuk sarapan atau camilan sore hari.</p>
+                        <p class="card-text">Rp.10.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="serabi solo" data-price="10.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 19 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/nasi liwet solo.jpg" class="card-img-top" alt="Product 19">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Liwet</h5>
+                        <p class="card-text">Nasi gurih yang dimasak dengan santan dan bumbu khas Solo, sering disajikan dengan suwiran ayam dan areh, memanjakan setiap suapan dengan rasa yang kaya dan kompleks.</p>
+                        <p class="card-text">Rp.10.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="nasi liwet" data-price="10.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 20 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img src="assets/nasi pecel.jpeg" class="card-img-top" alt="Product 20">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Pecel</h5>
+                        <p class="card-text">Nasi hangat yang ditemani dengan aneka sayuran rebus dan disiram dengan sambal kacang yang nikmat, sajian khas Jawa yang menyehatkan, menjadikannya pilihan makan siang yang populer.</p>
+                        <p class="card-text">Rp.20.000</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-product="nasi pecel" data-price="20.000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brown text-white text-center p-3 mt-5">
+        <p>© 2024 DAPUR Ara. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

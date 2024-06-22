@@ -1,167 +1,246 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D1A8C8;
     color: #333;
 }
 
-header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+    background-color: #D1A8C8;
 }
 
-.logo {
-    font-size: 24px;
-    color: #ff69b4; /* Warna pink */
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #D1A8C8;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.nav-link {
+    color: #D1A8C8;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav-link:hover {
+    color: #D1A8C8;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.bg-cream {
+    background-color: #D1A8C8!important;
 }
 
-.cart a {
-    text-decoration: none;
-    color: #ff69b4; /* Warna pink */
-}
-
-.hero {
-    background-color: #fdf5e6; /* Warna putih tulang */
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.hero-text {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.hero h1 {
-    font-size: 48px;
-    color: #333;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #666;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #ff69b4; /* Warna pink */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.products {
-    padding: 20px;
-    background-color: #fff;
-}
-
-.products h2 {
-    text-align: center;
-    color: #333;
-}
-
-.product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.product-item {
-    background-color: #fdf5e6; /* Warna putih tulang */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    width: calc(33% - 40px);
-}
-
-.product-item img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.product-item h3 {
-    color: #333;
-}
-
-.product-item p {
-    color: #666;
-}
-
-.price {
-    color: #ff69b4; /* Warna pink */
-    font-weight: bold;
-}
-
-.about {
-    padding: 20px;
-    background-color: #fff;
-}
-
-.about h2 {
-    text-align: center;
-    color: #333;
-}
-
-.about p {
-    text-align: center;
-    color: #666;
+.bg-brown {
+    background-color: #D1A8C8 !important;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #D1A8C8;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #D1A8C8;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+.navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+.navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+
+.cart-indicator {
+    position: relative;
+}
+
+.cart-indicator .cart-filled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+.navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Space between logo and brand name */
+}
+
+.cart-indicator {
+    position: relative;
+}
+
+.cart-indicator .cart-filled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px; /* Tentukan tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Gambar akan menyesuaikan ukuran kotak */
+}
+
+.card-body {
     text-align: center;
 }
 
-footer .contact-info, footer .social-media, footer .newsletter {
-    margin-bottom: 20px;
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 250px; /* Mengatur ulang tinggi gambar untuk mode mobile */
+    }
+    
+    .card {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
+    
+    .card-title {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    
+    .card-text {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+}
+.card {
+    height: 100%;
 }
 
-footer .social-media a {
-    color: #ff69b4; /* Warna pink */
-    text-decoration: none;
-    margin: 0 10px;
+.card-img-top {
+    height: 250px; /* Tinggi gambar untuk desktop */
+    object-fit: cover;
 }
 
-footer .newsletter input {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
+@media (max-width: 768px) {
+    .card-img-top {
+        height: auto; /* Tinggi gambar diubah untuk mode mobile */
+    }
+}
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* light gray background */
 }
 
-footer .newsletter button {
-    padding: 10px 20px;
-    background-color: #ff69b4; /* Warna pink */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.container {
+    max-width: 960px; /* max width of content */
+}
+
+/* Header styles */
+.navbar {
+    background-color: #f8f9fa; /* light background */
+    border-bottom: 2px solid #D1A8C8; /* border color */
+    padding: 10px 0; /* vertical padding */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* larger font size for brand */
+    font-weight: bold; /* bold text */
+    color: #343a40; /* dark text color */
+}
+
+.navbar-toggler {
+    border: none; /* remove border from toggle button */
+}
+
+.navbar-toggler-icon {
+    background-color: #D1A8C8; /* background color of toggle icon */
+}
+
+.navbar-nav .nav-link {
+    color: #6c757d; /* link color */
+    font-size: 1.1rem; /* font size */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #343a40; /* hover link color */
+}
+
+/* Main section styles */
+.main-content {
+    padding: 20px 0; /* vertical padding */
+}
+
+/* About section styles */
+.about-section {
+    background-color: #fff; /* white background */
+    padding: 40px; /* padding inside section */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.about-section h1 {
+    font-size: 2.5rem; /* larger font size for section title */
+    color: #343a40; /* dark text color */
+}
+
+.about-section h2 {
+    font-size: 2rem; /* larger font size for section titles */
+    color: #343a40; /* dark text color */
+}
+
+.about-section p {
+    font-size: 1.1rem; /* font size for paragraphs */
+    color: #6c757d; /* paragraph text color */
+}
+
+.about-section ul {
+    list-style-type: none; /* remove default list styles */
+    padding-left: 0; /* remove default padding */
+}
+
+.about-section ul li {
+    margin-bottom: 10px; /* space between list items */
+}
+
+.social-btn {
+    display: inline-block; /* make buttons inline */
+    margin-right: 10px; /* space between buttons */
+}
+
+.social-btn i {
+    margin-right: 5px; /* space between icon and text */
 }
